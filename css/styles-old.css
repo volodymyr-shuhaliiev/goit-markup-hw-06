@@ -84,7 +84,7 @@ background-color: #404BBF
 } */
 
 /* SECTION ADVANTAGES */
-.advantages-section {
+/* .advantages-section {
         padding: 120px 0
 }
 
@@ -134,7 +134,7 @@ background-color: #f4f4fd;
 
 .advantages-li {
         width: calc((100% - 72px) / 4);   
-}
+} */
 
 /* SECTION OUR TEAM */
 .team-section {
