@@ -267,6 +267,8 @@ background: #fff;
     position: relative;
     padding-top: 72px;
     padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
 
 
 }
@@ -314,12 +316,15 @@ background: #fff;
        color: #434455;
        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mobile-nav-link.current
- {
+.mobile-contact-item.current {
     color: #404bbf;
 }
-.mobile-contact-link:hover {
+
+.mobile-contact-link.current {
+    color: #404bbf;
+}
+
+.mobile-nav-link.current {
     color: #404bbf;
 }
 
@@ -637,6 +642,7 @@ background-color: #404BBF}
     background-position: center;
     background-size: cover;
     max-width: 320px;
+    margin: 0 auto;
 
 }
 
@@ -648,6 +654,8 @@ background-color: #404BBF}
         rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob-2x.jpg);
     }
  }
+
+
 .hero-name {
 
     font-weight: 700;
@@ -659,9 +667,9 @@ background-color: #404BBF}
     max-width: 216px;
     margin-left: auto;
     margin-right: auto;
-    
  
 }
+
 .button {
         font-weight: 500;
         font-size: 16px;
@@ -694,7 +702,7 @@ background-color: #404BBF;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tab-1x.jpg);
     
-    }}
+    }
 
  @media (min-device-pixel-ratio: 2),
  (min-resolution:192dpi),
@@ -703,7 +711,7 @@ background-color: #404BBF;
          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tab-2x.jpg);
      }
- }
+ 
     .hero-name {
     
         font-size: 56px;
@@ -716,6 +724,7 @@ background-color: #404BBF;
      {    
      margin-top: 36px;
       }
+    }}
 
 
 
@@ -727,36 +736,26 @@ background-color: #404BBF;
         max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-pc-1x.jpg);
-        }}
+        }
 
  @media (min-device-pixel-ratio: 2),
  (min-resolution:192dpi),
  (min-resolution:2dppx) {
-     .hero {
+     
+    .hero {
          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-         rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-pc-2x.jpg);}}
+         rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-pc-2x.jpg);}
+        }}
 
     
-    .hero-name {
     
-            font-weight: 700;
-            font-size: 56px;
-            line-height: 1.07;
-            letter-spacing: 0.02em;
-             max-width: 496px;
-    
-    }
-    .button {
-    margin-top: 48px;
-
-    }
 
 
 /* Advantages section */
 
 .advantages-section {
     padding: 96px 0;
-    max-width: 320px;
+    /* max-width: 320px; */
     
 }
 
@@ -815,7 +814,7 @@ text-align: center;
 
     .advantages-section {
         padding: 96px 0;
-        max-width: 768px;
+        /* max-width: 768px; */
         
 }
 
@@ -824,11 +823,13 @@ text-align: center;
 .advantages-list {
         display: flex;
         gap: 24px;
+        row-gap: 72px;
        
 }
 
 .advantages-li {
-    padding-bottom: 72px;
+    padding-bottom: 0px;
+   
 }
 
 
@@ -852,6 +853,7 @@ background-color: #f4f4fd;
     color: #2e2f42;
     margin-bottom: 8px;
     text-align: left;
+    
         
 }
 .advantages-text {
@@ -870,7 +872,8 @@ background-color: #f4f4fd;
 @media screen and (min-width: 1158px) {
     .advantages-section {
         padding: 120px 0;
-        max-width: 1440px;}
+        /* max-width: 1440px; */
+    }
 
 
     .advantages-list {
@@ -909,6 +912,7 @@ background-color: #f4f4fd;
         margin-bottom: 8px;
 }
 .advantages-text {
+    font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -927,13 +931,13 @@ background-color: #f4f4fd;
  
     background-color: #F4F4FD;
     padding: 96px 0;
-    max-width: 320px;
+    /* max-width: 320px; */
    
 
 }
 .container-team {
-    max-width: 264px;
-    margin-left: 28px;
+    max-width: 296px;
+    /* margin-left: 28px; */
 }
 
 .sectionname {
@@ -949,7 +953,7 @@ color: #2e2f42;
 .team-ul {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        row-gap: 72px;
         
 }
 
@@ -963,7 +967,7 @@ color: #2e2f42;
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-card-container {
-        padding: 64px 0;   
+        padding: 32px 0;   
        }
 
 
@@ -1024,12 +1028,15 @@ color: #2e2f42;
     .team-section {
         background-color: #F4F4FD;
         padding: 120px 0;
-        max-width: 768px;
+        justify-content: space-between;
+        /* max-width: 768px; */
         }
 
     .container-team {
-        max-width: 552px;
-        margin-left: 108px;}
+        max-width: 584px;
+        gap:24px}
+        
+
             
     .team-card {
         width: calc((100% - 24px) / 2);
@@ -1041,7 +1048,7 @@ color: #2e2f42;
         background-color: #F4F4FD;
         padding: 120px 0;
 
-        max-width: 1440px;
+        /* max-width: 1440px; */
         }
 
     .container-team {
@@ -1168,8 +1175,8 @@ footer {
 }
 .page-footer {
     display: flex;
-    /* flex-wrap: wrap; */
-    padding: 97.5px 0;
+     flex-wrap: wrap;
+    padding: 96px 0; 
   
     
 }
@@ -1308,29 +1315,32 @@ input::placeholder {
 
 
     .footer-container {
-        display: flex;
-        flex-wrap: wrap;
+        padding-left: 108px;
+        /* display: flex;
+        flex-wrap: wrap; */
         align-items: baseline;
         max-width: 768px;  } 
 
-    .footer-logo-text {
+    /* .footer-logo-text {
         margin-left: 108px;
-    }
+    } */
 
     .social-media-container {
         width: 208px;
         margin-bottom: 72px;
-        margin-left: 24px;
+        margin-left: 0px;
     }
-        
+     
+   .input-subscribe-email {
+       width: 264px;}
 
     .social-media {
         
     text-align: left;}
 
-    .subscribe-form {
+    /* .subscribe-form {
         margin-left: 108px;
-    }
+    } */
     .subscribe-paragraph {
         text-align: left;
     }
@@ -1357,14 +1367,15 @@ input::placeholder {
     }
     
     .footer-container {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: baseline;
-        min-width: 1158px; }  
+    
+    padding-left: 15px;
+    min-width: 1158px; }  
  
     .footer-logo-text {
      margin-left: 0px;
-     width: 264px; }
+     width: 264px;
+     margin-bottom: 0px;
+        } 
 
 
      .subscribe-form {
@@ -1373,7 +1384,7 @@ input::placeholder {
 
     .social-media-container {
         width: 208px;
-        margin-bottom: 72px;
+        margin-bottom: 0px;
         margin-left: 120px;
     }
 
