@@ -421,9 +421,10 @@ background: #fff;
     
     }
     
-    .backdrop:not (.is-open) .modal  {
+    .backdrop:not(.is-open) .modal {
     transform: translate (-50%, -100%)
     }
+    
     
     .modal-button-close {
             display: flex;
@@ -953,7 +954,7 @@ color: #2e2f42;
 .team-ul {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px;
         
 }
 
@@ -1032,12 +1033,16 @@ color: #2e2f42;
         /* max-width: 768px; */
         }
 
+    .team-ul {
+    display: flex;
+   flex-wrap: wrap;
+    gap:72px 24px;}
+
     .container-team {
         max-width: 584px;
         gap:24px;}
         
-
-            
+             
     .team-card {
         width: calc((100% - 24px) / 2);
           }
@@ -1048,7 +1053,7 @@ color: #2e2f42;
         background-color: #F4F4FD;
         padding: 120px 0;
 
-        /* max-width: 1440px; */
+       
         }
 
     .container-team {
